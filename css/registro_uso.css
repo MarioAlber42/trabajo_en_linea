@@ -1,0 +1,172 @@
+.registro {
+    margin: auto;
+}
+
+#menuRegistro {
+    background: rgba(0,0,0,0.1);
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    margin: auto;
+    align-items: flex-start; /*todos los elementos se alinean a una misma altura*/
+}
+
+#menuRegistro ul {
+    list-style: none;
+}
+
+#menuRegistro ul li {
+    display: inline-block;
+    width: 150px;
+    margin-right: -4px;
+}
+
+#menuRegistro ul li a {
+    color: #000;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.active {
+    background: rgba(0,0,0,0.3) !important;
+}
+
+#menuRegistro ul li a:hover {
+    background: rgba(0,0,0,0.3);
+    color: #333;
+    transition: .5s;
+}
+
+
+
+.registro .column--50:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.registroForm {
+    margin-top: 18px;
+    padding: 5px;
+} 
+
+.registro__title {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.registro__label {
+   font-weight: 300;
+}
+
+.registro__input {
+    font-size: 15px;
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 9px;
+}
+
+.buttonbus {
+    text-align: center;
+}
+
+.registro__button {
+    border: none;
+    width: 100%;
+    color: #fff;
+    font-size: 1.1em;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.registro__button:hover {
+    background: #fff;
+    color: #1a2537;
+}
+
+.registro__txt {
+   text-align: center;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.registro__txt link {
+    text-decoration: line-through;
+}
+
+#ocultar {
+    display: none;
+}
+
+@media screen and (min-width:480px)  { 
+   
+    .registro .column--50:nth-child(1) {
+        border-top: none;
+      
+    }
+    
+    .registro {
+        background: rgba(0,0,0,0.1);
+        margin-bottom: 15px;
+    }
+    
+    .registro .container--flex {
+        align-items: flex-start;
+    }
+    
+    #menuRegistro {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (min-width:768px)  { 
+
+    .registro {
+        padding: 20px;
+        margin-bottom: 30px;
+    }  
+    
+    .registro__title {
+        font-size: 1.8em;
+    }
+    
+    .registro__txt {
+        font-size: 1.1em;
+    }
+    
+    .registro__label {
+        font-size: 1.1em;
+    }
+    
+    .registro__button {
+        max-width: 350px;
+    }
+    
+    #menuRegistro {
+        margin-bottom: 20px;
+        max-width: 700px;
+    }
+    
+}
+
+@media screen and (min-width:1024px) { 
+
+    .registro {
+        max-width: 1000px;
+    }
+    #menuRegistro {
+        margin-top: 20px;
+    }
+    
+}
+
+@media screen and (min-width:1600px) { 
+
+
+}
+
+

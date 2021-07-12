@@ -1,0 +1,565 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Cuando demos border o padding que queden en este modelo de caja*/
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+/*---------------------estilos del header como el menu y el banner---------------------*/
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.logo {
+    float: left;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .contenedor {
+    display: table;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51, 51, 51, 0.9);
+    transition: 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu-link {
+    display: block; /*ESTO HACE QUE SE PONGN UN ABAJO DEL OTRO*/
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255, 0.5);
+}
+
+.menu-link:hover {
+    background: rgba(255,255,255, 0.3);
+}
+
+.menu-link--select {
+   background: rgba(255,255,255, 0.3); 
+}
+
+#menu-bar:checked ~ .menu {
+   transform: translateX(0%);
+}
+
+.banner-slider {
+    margin-top: 50px;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slider-img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-slider .contenedor {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    
+}
+
+.slider-titulo {
+    font-size: 28px;
+}
+
+.slider-txt {
+    font-size: 20px;
+    
+}
+
+.banner-slider .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*--------------------------------------------Estilos del main del inicio------------------------------------------*/
+
+.container {
+ width: 100%;
+    margin: auto;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+                            
+.column {
+    width: 100%;
+}
+
+.group--color .container {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.main__title {
+    margin: 15px 0;
+    font-size: 1.8em;
+}
+
+.main__txt {
+    padding: 10px;
+}
+
+.column__title {
+    font-size: 1.3em; 
+    text-align: center;
+}
+
+.column__txt {
+    text-align: center;
+    font-size: 1em;
+}
+
+.main__about__description .column:nth-child(2) {
+    padding: 10px;
+}
+
+.btn {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 160px;
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    
+}
+
+.btn:hover {
+    background: #fff;
+    color: #333;
+    transition: .4s;
+}
+
+/*--------------------------------------------seccion de 3 columnas------------------------------------------*/
+
+.group__title {
+  font-size: 1.3em; 
+    text-align: center;   
+    font-weight: bold;
+    margin: 30px;
+    margin: auto;
+    padding: 10px;
+}
+.color-group__title {
+     background: #222;
+    color: #FFF;
+    max-width: 1000px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.our-team {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.our-team .container--flex {
+    align-items: flex-start;
+}
+
+.our-team__title {
+    font-family: 'Paifico', cursive;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.our-team__img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.our-team__txt {
+    padding: 10px;
+}
+
+
+
+/*--------------------------------------------Estilos del footer------------------------------------------*/
+
+footer {
+    width: 100%;
+    background: #222;
+    color: #fff;
+}
+
+footer .contenedor {
+    display: flex;
+}
+
+footer .contenedor .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+    
+}
+
+.titulo-footer {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.txt-footer {
+    text-align: justify;
+}
+
+.content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.content:before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    background: #1a1a1a;
+}
+
+.content:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+}
+
+.left .content .social-footer {
+    margin: 20px 0 0 0;
+}
+
+.link-footer {
+    padding: 0 2px;
+}
+
+.link-footer [class*="icon-"] {
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.link-footer [class*="icon-"]:hover /*el hover se puede usar para que haya algun efecto cuando se pase el mause sobre él*/{
+    background: rgba(255,255,255, 0.3);
+}
+
+.center .content [class*="icon-"] {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content [class*="icon-"]:hover {
+    background: rgba(255,255,255, 0.3);
+}
+
+.place {
+    font-size: 1.0625rem;
+    font-weight: 500;
+}
+
+.phone {
+    margin: 10px 0;
+}
+
+.right form .msg {
+    margin-top: 10px;
+}
+
+.right form .txt-footer { 
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+
+.input-footer, .textarea-footer {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+    color: #fff;
+}
+
+.input-footer {
+    height: 35px;
+    color: #fff;
+}
+
+.input-footer:focus .textarea-footer:focus {
+    outline-color: #3498db;
+}
+
+.btn-footer {
+    margin-top: 10px;   
+}
+
+.btn-footer .button-footer {
+     height: 40px;
+    width: 100%; 
+    border: none;
+    outline: none;
+    background: #f12020;
+    color: #fff;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-footer .button-footer:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.copy {
+    text-align: center;
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+/*---------------------------------------------Estilos responsive-----------------------------------------*/
+@media screen and (min-width:480px) /*viene la parte del banner y todo el main*/ {
+    
+    .slider-titulo {
+        font-size: 40px;
+    }
+    
+    .column--50 {
+        width: 49%;
+    }
+    
+    .main__about__description .column:nth-child(2) {
+    padding: 20px;
+        font-size: .9em;
+}
+    
+    .main__about__description .btn {
+        margin: 0;
+    }
+    
+    .our-team__img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .column--33 {
+        width: 32%; /*podemos reutilizar esta clase. de un 100% del container, todo lo pone a 33. tienen que ser 3 elementos para que de el resultado aproximado de 100%. 33*3 = 99 */
+    }
+    
+}
+
+@media screen and (min-width:768px)  /*viene la parte del banner y todo el main*/{
+   
+    .banner-slider {
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    .slider-img {
+        height: auto;
+        margin-top: -100px;
+    }
+    
+    .group--color .container {
+        margin-bottom: 20px;
+    }
+    
+    .main__title {
+        font-size: 2.2en;
+    }
+    
+    .main__about__description {
+        margin-top: 30px;
+    }
+    
+    .main__about__description .column--50:nth-child(2) {
+        font-size: 1em;
+    }
+    
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 25px;
+    }
+    
+    .column__title {
+        font-size: 1em;
+    }
+    
+    .group__title {
+        font-size: 2.2em;
+    }
+    
+      .our-team__img {
+        width: 220px;
+        height: 220px;
+    }
+
+}
+
+@media screen and (max-width:900px) /*solo footer*/ {
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+    
+    footer .contenedor {
+        flex-wrap: wrap; /*--investigar clases--*/
+        flex-direction: column; /*--investigar clases--*/
+    }
+    
+    .box {
+        margin: 5px 0;
+        
+    }
+}
+
+@media screen and (min-width:1024px) /*viene el menú y el banner y todo el main*/{
+    .menu {
+        position: static;
+        width: auto;
+        height: auto; /*Se esablece con el tramslate designado antes en la clase menu*/
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    
+    header label {
+        display: none;
+    }
+    
+    .menu-link {
+        border: none;
+    }
+    
+    .contenedor {
+        width: 1000px; /*el contenedor nos permitirá que tenga un ancho limite. Esto afecta a todo el sitio web pero es necesario que se declare esta clase a todos los demás elementos. Menos el Banner o el slider*/
+    }
+    
+    .slider-img {
+        margin-top: -200px;
+    }
+    
+    
+    .group--color .container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    
+    .main__title {
+        font-size: 2.3em;
+    }
+    
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 50px;
+        max-width: 1000px;
+    }
+    
+    .group {
+        margin-bottom: 50px;
+    }
+    
+    .container--flex {
+        max-width: 1000px;
+    }
+    
+      .our-team__img {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .our-team__title {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    
+    .our-team__img {
+        width: 420px;
+        height: 320px;
+    }
+    
+    .group .main__about__description .column:nth-child(1) img {
+        width: 100%;
+        height: 350px;
+    }
+    
+}

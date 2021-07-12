@@ -1,0 +1,13 @@
+[1007/181149.708:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1007/181241.994:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1007/182149.692:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1007/182149.708:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1007/182649.787:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1007/184150.922:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1007/185651.143:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1007/205422.141:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1007/205916.482:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1027/143515.096:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\NIKI\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\da6a5b03-e680-4a47-9eba-4b877d6db18c: El sistema no puede encontrar la ruta especificada. (0x3)
+[1027/143526.971:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: La operación se completó correctamente. (0x0)
+[1113/224520.821:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1127/105654.401:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro | Tu trabajo en linea</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos_base.css"><!---Estilos generales como es la re-utilización de clases de las columnas. Ya sea menú, footer, slider de fotos y header-->
+    <link rel="stylesheet" href="css/registro_uso.css"><!---Estilos más que nada dentro de la etiqueta "main"-->
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+     <header>
+      <!--En esta parte del header irá el menú (logo, lista del menú) y el slider de fotos (fotos con titulillo y texto)-->  
+       <div class="contenedor">
+      <h1 class="logo"><a href="index.html">Waibu</a></h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"></label>
+         <nav class="menu">
+<a class="menu-link" href="inicio.html"><span class="icon-casa"></span>Inicio</a>
+<a class="menu-link" href="conocenos.html"><span class="icon-persona"></span> Conocenos</a>
+<a class="menu-link menu-link--select" href="registro_uso.html"><span class="icon-formulario"></span>Registrate</a>
+<a class="menu-link" href="iniciar_busqueda.html"><span class="icon-escuela"></span> Iniciar busqueda</a>
+<a class="menu-link" href="contacto.html"><span class="icon-nota"></span> Contacto</a>
+    </nav>
+    </div>
+    </header>
+    
+    <main>
+    <!--En esta parte habrá 2 formularios en el cual uno será para empleados y otro para empleadores. Estos se acomodarán en 2 columnas (dependiendo de en donde se vea el sitio web). El formulario de "empleados" contendrá los siguientes campos: "nombre(s)", "apellido(s)", "dirección", "teléfonos", "correo electronico", "crea tu nombre de usuario", "crea tu contraseña", "rectifica tu contraseña". Para la parte de empleador: "nombre(s)", "apellido(s)", "nombre de la dependencia" "dirección", "teléfonos", "correo electronico", "crea tu nombre de usuario", "crea tu contraseña", "rectifica tu contraseña" -->
+   <section class="banner-slider">
+            <img class="slider-img" src="img/imagen4.jpg">
+            <div class="contenedor">
+            <h2 class="slider-titulo">Lorem ipsum dolor.</h2>
+            <p class="slider-txt">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-9.31,64.63 C78.72,251.14 490.69,28.13 508.17,134.70 L500.27,152.45 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+        </section>
+ <!---aqui inicia el registro-->    
+       
+<div class="contenedor">    
+ <div id="menuRegistro">
+            <ul>
+                <li><a href="#" class="active">Registrar negocio</a></li>
+                <li><a href="#">Registrarme</a></li>
+            </ul>
+        </div>    
+ <section class="registro">
+    <div id="mostrar">
+    <form class="registroForm" action="ingresar.php">
+       <h2 class="registro__title">Registrate si estas contratando</h2>
+       <div class="container container--flex">
+       <div class="column column--50">
+        <label for="" class="registro__label"><span class="icon-persona"></span>Usuario</label>
+        <input type="text" class="registro__input" placeholder="Anota tu nombre de usuario" required>
+        <label for="" class="registro__label"><span class="icon-key"></span>Contraseña</label>
+        <input type="password" class="registro__input" placeholder="Ingresa tu contraseña" required>
+        <label for="" class="registro__label"><span class="icon-key"></span>Negocio</label>
+        <input type="password" class="registro__input" placeholder="Ingresa tu contraseña" required>
+        </div>
+         <div class="column column--50">
+        <label for="" class="registro__label"><span class="icon-key"></span>Ubicación</label>
+        <input type="password" class="registro__input" placeholder="Ingresa tu contraseña" required>
+        <label for="" class="registro__label"><span class="icon-key"></span>Tipo de negocio</label>
+        <input type="password" class="registro__input" placeholder="Ingresa tu contraseña" required>
+        <label for="" class="registro__label"><span class="icon-key"></span>Puntaje</label>
+        <input type="password" class="registro__input" placeholder="Ingresa tu contraseña" required>
+        </div>
+         </div>
+          <div class="buttonbus">
+          <button class="registro__button" type="submit">Registrar</button>
+           </div>
+     </form> 
+     
+        
+     <form class="registroForm" id="ocultar" action="ingresar.php">
+       <h2 class="registro__title">Registrate para buscar trabajo</h2>
+       <div class="container container--flex">
+       <div class="column column--50">
+        <label for="" class="registro__label"><span class="icon-persona"></span>Usuario</label>
+        <input type="text" class="registro__input" placeholder="Anota tu nombre de usuario" required>
+        <label for="" class="registro__label"><span class="icon-key"></span>Contraseña</label>
+        <input type="password" class="registro__input" placeholder="Ingresa tu contraseña" required>
+        <label for="" class="registro__label"><span class="icon-key"></span>Experiencia</label>
+        <input type="password" class="registro__input" placeholder="Ingresa tu contraseña" required>
+        </div>
+
+        <div class="column column--50">
+        <label for="" class="registro__label"><span class="icon-key"></span>Estudios</label>
+        <input type="password" class="registro__input" placeholder="Ingresa tu contraseña" required>
+        <label for="" class="registro__label"><span class="icon-key"></span>Lugar de recidensia</label>
+        <input type="password" class="registro__input" placeholder="Ingresa tu contraseña" required>
+        <label for="" class="registro__label"><span class="icon-key"></span>Motivos</label>
+        <input type="password" class="registro__input" placeholder="Ingresa tu contraseña" required>
+           </div>
+         </div>
+          <div class="buttonbus">
+        <button class="registro__button" type="submit">Registrar</button>
+         </div>
+     </form>
+       </div>
+ </section>
+        </div>
+    </main>
+
+   <footer>
+    <!--Aquí va una sección que contendrá 3 columnas. una se llamará "Dirección" otra que se llamará "Contacto" y la otra llamada "Siguenos en nuestras redes sociales". No olidemos poner la "c" o &copy para poner los derechos de autor del sitio web-->
+   <div class="contenedor">
+   
+    <div class="left box">
+           <h2 class="titulo-footer">Sobre nosotros</h2>
+    <div class="content">
+           <p class="txt-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa voluptates itaque, adipisci provident sit minima in optio, consequatur iure veniam recusandae repudiandae minus laboriosam natus ad possimus eveniet ratione accusamus.</p>  
+           <div class="social-footer">
+               <a class="link-footer" href=""><span class="icon-facebook"></span></a>
+               <a class="link-footer" href=""><span class="icon-twitter"></span></a>
+               <a class="link-footer" href=""><span class="icon-instagram"></span></a>
+               <a class="link-footer" href=""><span class="icon-gps"></span></a>
+           </div>
+          </div>
+       </div>
+   
+   <div class="center box">
+        <h2 class="titulo-footer">Dirección</h2>
+        <div class="content">
+            <div class="phone">
+                <span class="icon-phone"></span>
+                <span class="txt-footer">555-555-5555</span>
+            </div>
+            <div class="place">
+                <span class="icon-gps"></span>
+                <span class="txt-footer">Fernando Alva Ixtlxochitl</span>
+            </div>
+            <div class="mail">
+                <span class="icon-mail"></span>
+                <span class="txt-footer">ejemplo@waibu.com</span>
+            </div>
+        </div>
+   </div>
+   
+   <div class="right box">
+       <h2 class="titulo-footer">Contacto</h2>
+       <div class="content">
+           <form action="#">
+               <div class="email">
+                   <div class="txt-footer">Email *</div>
+                   <input type="email" class="input-footer" required>
+                   </div>
+                   <div class="msg">
+                   <div class="txt-footer">Mensaje *</div>
+                   <textarea name="" id="" cols="25" rows="2" class="textarea-footer"></textarea>
+               </div>
+               <div class="btn-footer">
+                   <button class="button-footer" type="submit">Enviar</button>
+               </div>
+           </form>
+       </div>
+   </div>
+   <!--los label ahora no se pusieron en el form para ahorrar el codigo css para que se pocisione debajo. También se pusieron 2 etiquetas "span" para igual ahorrar codigo css para que un div se pocisione debajo de otro--> <!---FALTA LAS FUNCIONES DEL FORMULARIO DEL FOOTER-->
+    </div>
+    <p class="copy">&copy; Waibu Team | Todos los derechos reservados</p>
+   </footer>
+   
+    <script src="js/jquery.js"></script>
+    <script>
+    $(function(){
+       $("#menuRegistro li").on("click", function(){
+           var i = $(this).index();
+           $("#mostrar form").hide();
+           $("#mostrar form").eq(i).show();
+           $("#menuRegistro li a").removeClass("active");
+           $(this).find("a").addClass("active");
+       }); 
+    });
+    </script>
+   
+</body>
+</html>

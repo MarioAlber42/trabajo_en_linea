@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conocenos | Tu trabajo en linea</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos_base.css"><!---Estilos generales como es la re-utilización de clases de las columnas. Ya sea menú, footer, slider de fotos y header-->
+    <link rel="stylesheet" href="css/conocenos.css"><!---Estilos más que nada dentro de la etiqueta "main"-->
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+    <header>
+      <!---En esta parte del header irá el menú (logo, lista del menú) y el slider de fotos (fotos con titulillo y texto)-->    
+     <div class="contenedor">
+       <h1 class="logo"><a href="index.html">Waibu</a></h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"></label>
+         <nav class="menu">
+<a class="menu-link" href="inicio.html"><span class="icon-casa"></span>Inicio</a>
+<a class="menu-link menu-link--select" href="conocenos.html"><span class="icon-persona"></span> Conocenos</a>
+<a class="menu-link" href="registro_uso.html"><span class="icon-formulario"></span> Registrate</a>
+<a class="menu-link" href="iniciar_busqueda.html"><span class="icon-escuela"></span> Iniciar busqueda</a>
+<a class="menu-link" href="contacto.html"><span class="icon-nota"></span> Contacto</a>
+    </nav>
+    </div>
+   </header>
+    
+    <main>
+     <!---En esta parte la persona sabrá quienes somos y como puede sacarle provecho al sitio web. Contendrá igual una sección de 3 columnas (dependiendo de donde se vea el sitio web) una con uma imagen y otra con información respecto al POR QUÉ o el PROPOSITO de la creación de este sitio. Más abajo habrá 4 columnas hablando sobre las ventajas de buscar por este medio un trabajo o bien, buscar empleados: "buscar el trabajo más cerca de tu casa de forma segura", "ahorro de tiempo dedicado a la busqueda de trabajo o de empleados", "puede ver en primera instancia la competencia del que pide trabajo o el empleo que buscas" y "trabajar en lo que tu quieras" Cada columan contendrá una pequeña imagen y texto. Debajo de esta parte irá una sección divida en 2 columnas (dependiendo de donde se vea el sitio web) la cual describirá como usarlo en caso de ser "empleado" o "empleador"-->
+      <section class="banner-slider">
+            <img class="slider-img" src="img/imagen3.jpg">
+            <div class="contenedor">
+            <h2 class="slider-titulo">Lorem ipsum dolor.</h2>
+            <p class="slider-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+              <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-9.31,64.63 C78.72,251.14 490.69,28.13 508.17,134.70 L500.27,152.45 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+        </section>
+    <!--parte de QUIENE SOMOS?-->    
+        <div class="contenedor">
+        <section class="group our-team">
+           <div class="color-group__title">
+            <h2 class="group__title">¿Quienes somos?</h2>
+             </div>
+            <div class="container container--flex">
+                <div class="column column--33">
+                    <h3 class="our-team__title">Proposito</h3>
+                    <img src="img/imagen2.jpg" alt="" class="our-team__img">
+                    <p class="our-team__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, vel magni! Dolorem, aspernatur, sapiente.</p>
+                </div>
+                <div class="column column--33">
+                    <h3 class="our-team__title">Venajas</h3>
+                    <img src="img/imagen2.jpg" alt="" class="our-team__img">
+                    <p class="our-team__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis totam tempore, tenetur minus. Iusto.</p>
+                </div>
+                <div class="column column--33">
+                    <h3 class="our-team__title">Resultados</h3>
+                    <img src="img/imagen1.jpg" alt="" class="our-team__img">
+                    <p class="our-team__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum rerum facilis consequatur accusantium!</p>
+                </div>
+            </div>
+         </section> 
+  <!---------------------------parte de COMENTARIOS. Las clases de column--25 son para cuando sea mayor a 1000px y se vean 2 arriba y 2 abajo. Las clases de column column--50 son para poder acomodar el texto a un lado de la imagen. La clase de container container--flex me permite que se cumpla esta condicion en los campos seleccionados. La ventaja de reutilizar clases---------------------------->         
+         <section class="comentarios">
+             <div class="column--25">
+              <div class="container container--flex">
+               <div class="column column--50">
+               <img src="img/imagen2.jpg" alt="" class="comentarios--img">  
+                </div>
+                <div class="column column--50">
+               <p class="comentarios--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aliquam quasi odio, voluptatum consequuntur, enim rem hic, in minima porro totam sint officia incidunt libero nulla sequi temporibus doloribus ea?</p>
+                 </div>
+             </div>
+             </div>
+             
+             <div class="column--25">
+             <div class="container container--flex">
+              <div class="column column--50">
+               <img src="img/imagen2.jpg" alt="" class="comentarios--img">  
+                 </div>
+                 <div class="column column--50">
+               <p class="comentarios--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aliquam quasi odio, voluptatum consequuntur, enim rem hic, in minima porro totam sint officia incidunt libero nulla sequi temporibus doloribus ea?</p>
+                 </div>
+             </div>
+             </div>
+            
+             
+             <div class="column--25">
+             <div class="container container--flex">
+              <div class="column column--50">
+               <img src="img/imagen2.jpg" alt="" class="comentarios--img"> 
+                 </div>
+               <div class="column column--50">
+               <p class="comentarios--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aliquam quasi odio, voluptatum consequuntur, enim rem hic, in minima porro totam sint officia incidunt libero nulla sequi temporibus doloribus ea?</p> 
+                 </div>
+             </div>
+             </div>
+             
+             <div class="column--25">
+             <div class="container container--flex">
+              <div class="column column--50"> 
+               <img src="img/imagen2.jpg" alt="" class="comentarios--img"> 
+                 </div>
+                 <div class="column column--50">
+               <p class="comentarios--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aliquam quasi odio, voluptatum consequuntur, enim rem hic, in minima porro totam sint officia incidunt libero nulla sequi temporibus doloribus ea?</p> 
+             </div>
+             </div>
+             </div>
+         </section>
+    <!---parte de INSTRUCCIONES DE EMPLEADO Y EMPLEADOR-->       
+         <section class="instrucciones">
+          <h2 class="main__title">Instruciciones de uso</h2>
+           <div class="container container--flex">
+            <div class="column column--50">
+             <h3 class="our-team__title">Lorem ipsum dolor.</h3>
+              <img src="img/imagen7.jpg" alt="" class="img--instrucciones">
+              <p class="main__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cupiditate ut accusantium alias quos nesciunt repellendus aliquam impedit recusandae, provident tempora ipsa sit nostrum omnis esse minus voluptatum labore a.</p>
+              <p class="main__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cupiditate ut accusantium alias quos nesciunt repellendus aliquam impedit recusandae, provident tempora ipsa sit nostrum omnis esse minus voluptatum labore a.</p>
+              <p class="main__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cupiditate ut accusantium alias quos nesciunt repellendus aliquam impedit recusandae, provident tempora ipsa sit nostrum omnis esse minus voluptatum labore a.</p>
+             </div>
+             
+             <div class="column column--50">
+              <h3 class="our-team__title">Lorem ipsum dolor.</h3>  
+              <img src="img/imagen7.jpg" alt="" class="img--instrucciones">
+              <p class="main__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur voluptatum reprehenderit odio optio veniam aperiam eos eligendi iure quibusdam. Exercitationem, autem, veritatis! Enim cumque unde veniam accusantium et cupiditate quo.</p> 
+              <p class="main__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cupiditate ut accusantium alias quos nesciunt repellendus aliquam impedit recusandae, provident tempora ipsa sit nostrum omnis esse minus voluptatum labore a.</p>
+              <p class="main__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cupiditate ut accusantium alias quos nesciunt repellendus aliquam impedit recusandae, provident tempora ipsa sit nostrum omnis esse minus voluptatum labore a.</p>
+             </div>
+             </div>
+         </section>
+         
+        </div>
+        
+    </main>
+
+     <footer>
+    <!--Aquí va una sección que contendrá 3 columnas. una se llamará "Dirección" otra que se llamará "Contacto" y la otra llamada "Siguenos en nuestras redes sociales". No olidemos poner la "c" o &copy para poner los derechos de autor del sitio web-->
+   <div class="contenedor">
+   
+    <div class="left box">
+           <h2 class="titulo-footer">Sobre nosotros</h2>
+    <div class="content">
+           <p class="txt-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa voluptates itaque, adipisci provident sit minima in optio, consequatur iure veniam recusandae repudiandae minus laboriosam natus ad possimus eveniet ratione accusamus.</p>  
+           <div class="social-footer">
+               <a class="link-footer" href=""><span class="icon-facebook"></span></a>
+               <a class="link-footer" href=""><span class="icon-twitter"></span></a>
+               <a class="link-footer" href=""><span class="icon-instagram"></span></a>
+               <a class="link-footer" href=""><span class="icon-gps"></span></a>
+           </div>
+          </div>
+       </div>
+   
+   <div class="center box">
+        <h2 class="titulo-footer">Dirección</h2>
+        <div class="content">
+            <div class="phone">
+                <span class="icon-phone"></span>
+                <span class="txt-footer">555-555-5555</span>
+            </div>
+            <div class="place">
+                <span class="icon-gps"></span>
+                <span class="txt-footer">Fernando Alva Ixtlxochitl</span>
+            </div>
+            <div class="mail">
+                <span class="icon-mail"></span>
+                <span class="txt-footer">ejemplo@waibu.com</span>
+            </div>
+        </div>
+   </div>
+   
+   <div class="right box">
+       <h2 class="titulo-footer">Contacto</h2>
+       <div class="content">
+           <form action="#">
+               <div class="email">
+                   <div class="txt-footer">Email *</div>
+                   <input type="email" class="input-footer" required>
+                   </div>
+                   <div class="msg">
+                   <div class="txt-footer">Mensaje *</div>
+                   <textarea name="" id="" cols="25" rows="2" class="textarea-footer"></textarea>
+               </div>
+               <div class="btn-footer">
+                   <button class="button-footer" type="submit">Enviar</button>
+               </div>
+           </form>
+       </div>
+   </div>
+   <!--los label ahora no se pusieron en el form para ahorrar el codigo css para que se pocisione debajo. También se pusieron 2 etiquetas "span" para igual ahorrar codigo css para que un div se pocisione debajo de otro--> <!---FALTA LAS FUNCIONES DEL FORMULARIO DEL FOOTER-->
+    </div>
+    <p class="copy">&copy; Waibu Team | Todos los derechos reservados</p>
+   </footer>
+</body>
+</html>
